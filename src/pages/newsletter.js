@@ -12,7 +12,7 @@ const NewsLetter = () => {
             name="contact"
             method="post"
             netlify-honeypot="bot-field"
-            data-netlfiy="true"
+            data-netlify="true"
             action="/success"
           >
             <input

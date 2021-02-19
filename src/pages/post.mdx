@@ -1,0 +1,67 @@
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../components/Complete'
+
+<section className="mdx-page">
+
+**I'm baby 3 wolf moon mlkshk keffiyeh, asymmetrical tacos bespoke jianbing master cleanse austin coloring book godard everyday carry blue bottle copper mug schlitz.** Umami subway tile messenger bag skateboard fam, beard iceland YOLO godard franzen fixie readymade next level iPhone. Chambray cold-pressed photo booth, gastropub tacos succulents godard vegan prism squid celiac XOXO shaman 8-bit fanny pack. Vaporware fingerstache skateboard seitan. Banh mi yr cardigan seitan tote bag plaid sartorial helvetica. Pour-over small batch coloring book subway tile.
+
+# my heading 1
+
+<h1 className="special">jsx heading one</h1>
+###### my heading 6
+
+<div className="code">
+
+```js
+const firstName = 'john'
+const lastName = 'smith
+```
+
+</div>
+
+<div className="nice-text">
+
+<h3>nice text</h3>
+
+<FiInfo className="nice-text-icon" />
+
+Poke chicharrones VHS master cleanse cred church-key pinterest farm-to-table hashtag whatever etsy polaroid activated charcoal 90's cliche. Knausgaard skateboard photo booth bitters DIY kombucha, humblebrag viral. Taiyaki bespoke put a bird on it vaporware keytar, street art freegan banjo tumeric authentic aesthetic synth. Chicharrones la croix authentic listicle flannel you probably haven't heard of them ethical, chillwave vape blue bottle woke kitsch.
+
+</div>
+
+<h2>React Components</h2>
+
+<Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
+
+</section>
